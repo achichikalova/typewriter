@@ -1,7 +1,7 @@
 const sentence = "hello there from lighthouse labs \n";
 
-for (let i = 0; i < sentence.length; i++) {
+for (const char of sentence) { {
   setTimeout(() => {
-    process.stdout.write(sentence[i]);
-  },150 * i)
+    process.stdout.write(char);
+  }, 150 * i);
 };
